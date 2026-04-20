@@ -1,0 +1,86 @@
+.contact-section {
+  background: rgba(10, 10, 15, 0.94);
+}
+
+.contact-section::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 168, 67, 0.16), transparent);
+}
+
+.contact-inner {
+  text-align: center;
+  max-width: 52rem;
+}
+
+.contact-kicker {
+  margin-bottom: 1rem;
+  color: var(--gold);
+  font-size: 0.74rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.contact-title {
+  font-family: var(--fd);
+  font-size: clamp(2.4rem, 6vw, 4.3rem);
+  line-height: 1.08;
+  font-weight: 400;
+}
+
+.contact-title em {
+  font-style: italic;
+  color: var(--text2);
+}
+
+.contact-copy {
+  margin: 1rem auto 0;
+  max-width: 38rem;
+  color: var(--text2);
+  line-height: 1.85;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: rgba(15, 15, 22, 0.98);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.3rem 0;
+}
+
+.footer-inner:hover .footer-name {
+  color: var(--gold2);
+}
+
+.footer-inner:hover .footer-location {
+  color: var(--text);
+}
+
+.footer-name {
+  font-family: var(--fd);
+  font-size: 1rem;
+}
+
+.footer-location {
+  color: var(--text2);
+  font-size: 0.84rem;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 640px) {
+  .contact-section {
+    padding-top: 2.25rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
