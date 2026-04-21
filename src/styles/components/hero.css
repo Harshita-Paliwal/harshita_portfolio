@@ -53,9 +53,34 @@
   z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.7fr);
-  gap: clamp(3rem, 6vw, 6rem);
+  grid-template-areas:
+    'copy photo'
+    'contacts photo';
+  gap: clamp(2rem, 1.5vw, 4.5rem);
   align-items: start;
   padding-top: 0.6rem;
+}
+
+.hero-copy {
+  grid-area: copy;
+  min-width: 0;
+}
+
+.hero-photo-card {
+  grid-area: photo;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-contact-grid {
+  grid-area: contacts;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.75rem;
+  width: 100%;
+  margin-top: 0.45rem;
 }
 
 .hero-kicker {
@@ -152,11 +177,6 @@
   background: transparent;
 }
 
-.hero-photo-card {
-  display: flex;
-  justify-content: center;
-}
-
 .hero-photo-frame {
   width: min(100%, 22.5rem);
   aspect-ratio: 0.84;
@@ -184,15 +204,6 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.35s ease;
-}
-
-.hero-contact-grid {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin-top: 2.45rem;
 }
 
 .hero-contact-card {
@@ -324,17 +335,32 @@
 
 @media (max-width: 1100px) {
   .hero-inner {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2.5rem;
+  }
+
+  .hero-copy {
+    width: 100%;
+  }
+
+  .hero-photo-card,
+  .hero-contact-grid {
+    width: 100%;
+  }
+
+  .hero-photo-card {
+    order: 2;
+  }
+
+  .hero-contact-grid {
+    order: 3;
+    margin-top: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-photo-card {
     justify-content: center;
-  }
-
-  .hero-contact-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 2rem;
   }
 }
 
@@ -349,6 +375,17 @@
 
   .hero-copy {
     max-width: 100%;
+  }
+
+  .hero-photo-card {
+    order: 2;
+  }
+
+  .hero-contact-grid {
+    order: 3;
+    margin-top: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
   }
 
   .hero-contact-grid {

@@ -6,7 +6,6 @@ import {
   GithubIcon,
   InstagramIcon,
   LinkedinIcon,
-  PhoneIcon,
   YoutubeIcon,
 } from './icons';
 
@@ -61,55 +60,48 @@ export default function Hero() {
           </div>
         </div>
 
+        <div className="hero-contact-grid">
+          <a className="hero-contact-card" href="mailto:paliwalharshita16@gmail.com" aria-label="Email Harshita at paliwalharshita16@gmail.com" title="Email">
+            <span className="hero-contact-icon hero-contact-icon-gold">
+              <EmailIcon width="18" height="18" />
+            </span>
+            <span className="sr-only">Email</span>
+          </a>
+
+          <a className="hero-contact-card" href="https://www.linkedin.com/in/harshipali16" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile" title="LinkedIn">
+            <span className="hero-contact-icon hero-contact-icon-linkedin">
+              <LinkedinIcon width="18" height="18" />
+            </span>
+            <span className="sr-only">LinkedIn</span>
+          </a>
+
+          <a className="hero-contact-card hero-contact-card-social" href="https://github.com/Harshita-Paliwal" target="_blank" rel="noreferrer" aria-label="Open GitHub profile" title="GitHub">
+            <span className="hero-contact-icon hero-contact-icon-github">
+              <GithubIcon width="18" height="18" />
+            </span>
+            <span className="sr-only">GitHub</span>
+          </a>
+
+          <a className="hero-contact-card hero-contact-card-social" href="https://www.instagram.com/getupharshi" target="_blank" rel="noreferrer" aria-label="Open Instagram profile" title="Instagram">
+            <span className="hero-contact-icon hero-contact-icon-instagram">
+              <InstagramIcon width="18" height="18" />
+            </span>
+            <span className="sr-only">Instagram</span>
+          </a>
+
+          <a className="hero-contact-card hero-contact-card-social" href="https://www.youtube.com/@getupharshi" target="_blank" rel="noreferrer" aria-label="Open YouTube channel" title="YouTube">
+            <span className="hero-contact-icon hero-contact-icon-youtube">
+              <YoutubeIcon width="18" height="18" />
+            </span>
+            <span className="sr-only">YouTube</span>
+          </a>
+        </div>
+
         <div className="hero-photo-card">
           <div className="hero-photo-frame">
             <img className="hero-photo" src={photoUrl} alt="Harshita Paliwal" />
           </div>
         </div>
-      </div>
-
-      <div className="section-inner hero-contact-grid">
-        <a className="hero-contact-card" href="mailto:paliwalharshita16@gmail.com" aria-label="Email Harshita at paliwalharshita16@gmail.com" title="Email">
-          <span className="hero-contact-icon hero-contact-icon-gold">
-            <EmailIcon width="18" height="18" />
-          </span>
-          <span className="sr-only">Email</span>
-        </a>
-
-        <a className="hero-contact-card" href="tel:+918810266552" aria-label="Call Harshita at +91 8810266552" title="Phone">
-          <span className="hero-contact-icon hero-contact-icon-teal">
-            <PhoneIcon width="18" height="18" />
-          </span>
-          <span className="sr-only">Phone</span>
-        </a>
-
-        <a className="hero-contact-card" href="https://www.linkedin.com/in/harshipali16" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile" title="LinkedIn">
-          <span className="hero-contact-icon hero-contact-icon-linkedin">
-            <LinkedinIcon width="18" height="18" />
-          </span>
-          <span className="sr-only">LinkedIn</span>
-        </a>
-
-        <a className="hero-contact-card hero-contact-card-social" href="https://github.com/Harshita-Paliwal" target="_blank" rel="noreferrer" aria-label="Open GitHub profile" title="GitHub">
-          <span className="hero-contact-icon hero-contact-icon-github">
-            <GithubIcon width="18" height="18" />
-          </span>
-          <span className="sr-only">GitHub</span>
-        </a>
-
-        <a className="hero-contact-card hero-contact-card-social" href="https://www.instagram.com/getupharshi" target="_blank" rel="noreferrer" aria-label="Open Instagram profile" title="Instagram">
-          <span className="hero-contact-icon hero-contact-icon-instagram">
-            <InstagramIcon width="18" height="18" />
-          </span>
-          <span className="sr-only">Instagram</span>
-        </a>
-
-        <a className="hero-contact-card hero-contact-card-social" href="https://www.youtube.com/@getupharshi" target="_blank" rel="noreferrer" aria-label="Open YouTube channel" title="YouTube">
-          <span className="hero-contact-icon hero-contact-icon-youtube">
-            <YoutubeIcon width="18" height="18" />
-          </span>
-          <span className="sr-only">YouTube</span>
-        </a>
       </div>
     </section>
   );
