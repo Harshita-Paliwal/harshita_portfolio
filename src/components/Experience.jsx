@@ -22,7 +22,7 @@ export default function Experience() {
             <span>Years of Coding</span>
           </article>
           <article className="experience-stat">
-            <strong>2+</strong>
+            <strong>3+</strong>
             <span>Internships</span>
           </article>
           <article className="experience-stat">
@@ -35,52 +35,68 @@ export default function Experience() {
           <article className="experience-card">
             <div className="experience-index">01</div>
             <div className="experience-content">
-              <h3>Full Stack Intern</h3>
-              <p className="experience-company">4everCloud Technologies</p>
+              <h3>Software Engineer Intern</h3>
+              <p className="experience-company">Surepass Technologies</p>
               <p className="experience-copy">
-                Developed a scalable Consent Management System aligned with the DPDP Act,
-                including user management, master data modules, advanced filtering, and API-based
-                consent workflows. Integrated multilingual support using Hugging Face NLP models
-                and built reporting and analytics with data export capabilities.
+                Built scalable backend solutions for KYC verification and Batch Solver automation
+                using FastAPI, Flask, PostgreSQL, Temporal, and Elasticsearch, while optimizing
+                enterprise workflows through data mapping, web scraping, and backend automation.
               </p>
 
               <div className="experience-tags">
-                <span>React.js</span>
-                <span>Node.js</span>
+                <span>FastAPI</span>
+                <span>Flask</span>
                 <span>PostgreSQL</span>
-                <span>Hugging Face</span>
-                <span>DPDP Act</span>
-                <span>REST APIs</span>
+                <span>Temporal</span>
+                <span>Elasticsearch</span>
+                <span>Automation</span>
               </div>
-            </div>
-            <div className="experience-meta">
-              <span>2025</span>
-              <span>Full-time Internship</span>
             </div>
           </article>
 
           <article className="experience-card">
             <div className="experience-index experience-index-teal">02</div>
             <div className="experience-content">
+              <h3>Full Stack Developer Intern</h3>
+              <p className="experience-company experience-company-teal">4everCloud Technologies</p>
+              <p className="experience-copy">
+                Developed responsive frontend pages and dashboards for a multilingual Consent
+                Management System using React. Integrated REST APIs and implemented consent
+                workflows for seamless user experience, while also building a rule-based chatbot
+                and supporting backend integrations for platform features.
+              </p>
+
+              <div className="experience-tags">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>REST APIs</span>
+                <span>Consent Workflows</span>
+                <span>Chatbot</span>
+              </div>
+            </div>
+          </article>
+
+          <article className="experience-card">
+            <div className="experience-index experience-index-teal">03</div>
+            <div className="experience-content">
               <h3>Frontend Development Intern</h3>
               <p className="experience-company experience-company-teal">Planetcast Media Services Ltd.</p>
               <p className="experience-copy">
-                Designed and developed a full-stack billing application to generate, manage, and
-                store invoices using HTML, CSS, and JavaScript, with dynamic bill calculation and
-                database integration.
+                Built a responsive billing management application with HTML, CSS, and JavaScript,
+                implementing dark/light mode, role-based dashboards, and bill management features.
+                Developed interactive UI components including a Kanban board, analytics dashboard,
+                and export functionality for CSV, Excel, and PDF.
               </p>
 
               <div className="experience-tags">
                 <span>HTML5</span>
                 <span>CSS3</span>
                 <span>JavaScript</span>
-                <span>Database Integration</span>
+                <span>Kanban Board</span>
+                <span>Analytics</span>
                 <span>UI Design</span>
               </div>
-            </div>
-            <div className="experience-meta">
-              <span>2024</span>
-              <span>Internship</span>
             </div>
           </article>
         </div>

@@ -54,7 +54,7 @@
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr);
   gap: 1.4rem;
   padding: 1.8rem;
   border: 1px solid var(--border);

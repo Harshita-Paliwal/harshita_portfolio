@@ -8,13 +8,14 @@ export default function Contact() {
       <section className="page-section contact-section" id="contact">
         <div className="section-inner contact-inner">
           <p className="contact-kicker">Let's Connect</p>
+          <p className="contact-pill">Open for hiring conversations</p>
           <h2 className="contact-title">
-            Open to roles,
+            Open to jobs,
             <br />
-            <em>internships and collaborations</em>
+            <em>full-time roles and collaborations</em>
           </h2>
           <p className="contact-copy">
-            If you have a role, idea, or project in mind, I would love to hear from you.
+            If you’re hiring or have an exciting opportunity in mind, I’d love to hear from you.
           </p>
         </div>
       </section>
