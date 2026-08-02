@@ -1,6 +1,6 @@
 // Open the resume in a new tab and also trigger a download.
 export function openAndDownloadResume() {
-  const resumeUrl = import.meta.env.VITE_RESUME_URL || '/resume.pdf';
+  const resumeUrl = import.meta.env.VITE_RESUME_URL || '/resume-hp.pdf';
 
   window.open(resumeUrl, '_blank', 'noopener,noreferrer');
 

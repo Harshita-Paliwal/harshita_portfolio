@@ -38,7 +38,7 @@ export default function Navbar() {
 
           <a
             className="nav-resume"
-            href="/resume.pdf"
+            href="/resume-hp.pdf"
             onClick={(event) => {
               event.preventDefault();
               openAndDownloadResume();
