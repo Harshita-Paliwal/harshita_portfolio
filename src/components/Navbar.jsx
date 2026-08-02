@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/components/navbar.css';
-import { openAndDownloadResume } from '../utils/resume';
+import { downloadResume } from '../utils/resume';
+import { DownloadIcon } from './icons';
 
 // Top navigation for the one-page portfolio.
 export default function Navbar() {
@@ -41,9 +42,10 @@ export default function Navbar() {
             href="/resume-hp.pdf"
             onClick={(event) => {
               event.preventDefault();
-              openAndDownloadResume();
+              downloadResume();
             }}
           >
+            <DownloadIcon width="14" height="14" />
             Resume
           </a>
         </div>

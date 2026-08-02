@@ -59,3 +59,22 @@ export function ExternalIcon(props) {
     </svg>
   );
 }
+
+export function EyeIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+      <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z" />
+      <path d="M12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" />
+    </svg>
+  );
+}
+
+export function DownloadIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+      <path d="M12 3v11" />
+      <path d="m7 10 5 5 5-5" />
+      <path d="M5 19h14" />
+    </svg>
+  );
+}

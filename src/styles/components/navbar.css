@@ -74,6 +74,9 @@
 .nav-resume {
   position: relative;
   overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   padding: 0.72rem 1.15rem;
   border: 1px solid rgba(212, 168, 67, 0.45);
   border-radius: 6px;
@@ -102,6 +105,15 @@
 .nav-resume:hover::after,
 .nav-resume:focus-visible::after {
   animation: shimmerSweep 0.85s ease;
+}
+
+.nav-resume svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 @media (max-width: 900px) {

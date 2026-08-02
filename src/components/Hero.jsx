@@ -1,11 +1,12 @@
 import React from 'react';
 import '../styles/components/hero.css';
-import { openAndDownloadResume } from '../utils/resume';
+import { openResumePreview } from '../utils/resume';
 import {
   EmailIcon,
   GithubIcon,
   InstagramIcon,
   LinkedinIcon,
+  EyeIcon,
   YoutubeIcon,
 } from './icons';
 
@@ -54,8 +55,9 @@ export default function Hero() {
               View My Work
             </button>
 
-            <button className="hero-button hero-button-secondary" onClick={openAndDownloadResume}>
-              Resume Download
+            <button className="hero-button hero-button-secondary" onClick={openResumePreview}>
+              <EyeIcon width="16" height="16" />
+              <span>Resume</span>
             </button>
           </div>
         </div>
